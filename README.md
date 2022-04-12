@@ -1,4 +1,5 @@
 # ThrowableTNT
+~ Colaboración con AfreYMT
 
 # COMMANDS:
 
