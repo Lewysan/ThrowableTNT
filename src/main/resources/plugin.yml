@@ -1,5 +1,7 @@
 name: ThrowableTNT
 version: 1.0
 main: me.tyranzx.throwabletnt.StellarCore
+author: "Tyranzx"
+description: "TNT Arrojable para minecraft. Lo divertido es incluirlo en las modalidades que creamos, asi lo hacemos mas epico!"
 commands:
     ttnt:
