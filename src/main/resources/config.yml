@@ -1,0 +1,5 @@
+TNT:
+    power: 3F
+    fuego: false
+    multiplicador: 2
+    dropear-item: false
