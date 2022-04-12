@@ -1,0 +1,5 @@
+name: ThrowableTNT
+version: 1.0
+main: me.tyranzx.throwabletnt.StellarCore
+commands:
+    ttnt:
