@@ -26,13 +26,17 @@ public class TNTCore extends StellarSource implements Listener {
                     tnt.setDropItem(StellarCore.settings.config.getBoolean("TNT.dropear-item"));
                     tnt.setVelocity(e.getPlayer().getLocation().getDirection().multiply(StellarCore.settings.config.getInt("TNT.multiplicador")));
                     ttnt.add(tnt);
-                    e.getPlayer().getInventory().remove(e.getPlayer().getInventory().getItemInHand());
                     e.setCancelled(true);
+                    if (e.getPlayer().getInventory().getItemInHand().getAmount() > 1) {
+                        int cantidadmano = e.getPlayer().getInventory().getItemInHand().getAmount() - 1;
+                        e.getPlayer().getInventory().getItemInHand().setAmount(cantidadmano);
+                    } else {
+                        e.getPlayer().getInventory().remove(e.getPlayer().getInventory().getItemInHand());
+                    }
                 }
             }
         }
     }
-
     @EventHandler
     public void onFallTNT(EntityChangeBlockEvent e) {
         if (e.getEntity() instanceof FallingBlock) {
